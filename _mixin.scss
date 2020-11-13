@@ -1,0 +1,45 @@
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: 1179px)",
+ 
+);
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+
+}
+
+
+@mixin a{
+  color:black;
+  text-decoration: none;
+  &:active{
+    color:black;
+  }
+  
+  &:visited{
+    color:black;
+  }
+  &:hover{
+    color:black;
+    cursor: pointer;
+  
+  }
+}
+// @mixin about-imgs{
+//   width: 100%;
+//   display:flex;
+//   justify-content: space-between;
+ 
+//   align-items: flex-start;
+
+//     // position: relative;
+//     // padding: 200px 0;
+//     // margin:0 150px;
+// }
+
+@mixin table{
+  border-bottom: 1px solid #31c2b6;
+}
