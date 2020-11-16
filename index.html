@@ -16,6 +16,9 @@
   <!-- <script src="https://kit.fontawesome.com/4cdad9f696.js" crossorigin="anonymous"></script> -->
 <!-- fontawsome↓-->
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<!-- googlefont↓-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
   
 
   <!-- slack↓-->
@@ -28,6 +31,8 @@
 <link href="js/common.css" rel="stylesheet" type="text/css">
 <link href="styles.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
 <script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <link href="js/slick.css" rel="stylesheet" type="text/css">
@@ -36,15 +41,16 @@
 
 
 <body>
- 
-  <section id="mainvisual">
+
+    
+  <div id="mainvisual">
    <header >
     <div class="mainvisual-logo">
       <h1>
         <span class="title-top">nail salon</span>
         <span class="title-bottom"> uuuu</span>
         </h1>
-        <p>............</p>
+     
     </div>
      <div class="header-imgs">
         <img class="header-left" src="img/iStock-nail01@2x.jpg">
@@ -59,7 +65,7 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#price">Price</a></li> 
-            <li><a href="#phot">Gallery</a></li> 
+            <li><a href="#gallery">Gallery</a></li> 
             <li><a href="#reserve">Revserve</a></li>
             <li> <a href="#access">Access</a></li>
 
@@ -67,7 +73,7 @@
        </nav> 
       </div>
    </header>
- </section> 
+ </div> 
 
 
 <main> 
@@ -112,11 +118,8 @@
 </section>
 <!-- price -->
     
- <div  id="price">
+ <section id="price">
     <h2> pricelist</h2>
-
-    <p>ボックスshdowいれる
-    </p>
     <table>
       <tr>
         <th>Gel a</th>
@@ -153,20 +156,20 @@
         <td>¥3000</td>
       </tr>
     </table>
- </div>
+ </section>
 <!-- gallery -->
 
-   <div id="gallery">
-
-    <h2><a href="gallery.html"></a>gallery</h2>
+   <section id="gallery">
   
+    <h2><a href="gallery.html"></a>gallery</h2>
+ 
 
   <ul class="slider">
     <li><img alt="画像1" src="img/inner01@2x.jpg"></li>
     <li><img alt="画像2" src="img/inner02@2x.jpg"></li>
     <li><img alt="画像3" src="img/inner03@2x.jpg"></li>
   </ul>
-</div>
+</section>
 
 
   
@@ -192,7 +195,7 @@
 
 
  <!-- access -->
-<div id="access">
+<section id="access">
   <h2>access</h2>
 
 
@@ -204,7 +207,9 @@
    
      <!-- <p><a href="#">top</a></p> -->
     </div>
- </div>    
+ </section>    
+
+ <div id="page_top"><a href="#"></a></div>
 </main>
 
 
@@ -218,7 +223,7 @@
       <!-- </script> -->
 
      
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     
 
 </body>

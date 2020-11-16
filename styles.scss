@@ -5,12 +5,9 @@
 $green:#d2f5f2;
 
 
-// html {
-// 	overflow: auto;
-// }
 body {
   // overflow: hidden;
-
+  font-family: 'Noto Sans JP',sans-serif;;
 }
 
 #mainvisual{
@@ -23,14 +20,7 @@ margin:0 50px;
  padding:0;
  margin: 15px;
  height: 30vh;
-//  &:after{
 
-//   font-family: "Font Awesome 5 Free";
-//   content: '\f107';
-//   font-weight: 900;
-//   display:block;
-//  text-align: center;
-//  margin: 100px auto;
 
 
 
@@ -41,9 +31,7 @@ margin:0 50px;
   text-align: left;
   position: relative;
  & h1{
-  //  width: 35%;
-   // margin:0 auto ;
-   // font-size:1.875rem;
+  
    display: flex;
    flex-direction: column;
     position: absolute;
@@ -143,9 +131,11 @@ height:(350px / 767px) * 100%;
 
 #about{
  margin:0 auto;
+
  @include mq(sp){
    width:auto;
-   margin:100px 15px;
+   margin:50px 15px;
+  //  padding: 10px 0;
  }
 }
   .about-content{
@@ -166,16 +156,14 @@ height:(350px / 767px) * 100%;
     }
   }
   p{
-    // width:100%;
+
     margin:100px 0;
-    // width: 620px / 920px * 100% ;
     font-size: 14px;
     line-height: 1.5rem;
    box-sizing: border-box;
    @include mq(sp){
      width:auto;
     font-size: 10px;
-    // white-space: nowrap;
     overflow-wrap:break-word;
 
 
@@ -204,7 +192,7 @@ margin:0 auto;
 }
 figure{
   display: flex;
-  // justify-content: center;
+
 }
 img{
   width:(600px / 1020px)* 100vw;
@@ -217,7 +205,7 @@ img{
   }
 }
 figcaption{
-margin:((350px / 767px)* 100vw) /2 auto;
+margin:((300px / 767px)* 100vw) /2 auto;
 // font-size: 10px;
 @include mq(sp){
 
@@ -254,19 +242,14 @@ margin:((350px / 767px)* 100vw) /2 auto;
   top:((200px / 767px)* 100vw) / 2;
   @include mq(sp){
   left:30px;
-  top:20px;
+  top:10px;
   font-size: 10px;
   }
   }
 }
 
 
-// #news{
-//   width:1020px;
-//  text-align: center;
-//  @include mq(sp){
-//   width:auto;
-// }
+
 
 .news{
   width:1020px;
@@ -311,6 +294,7 @@ margin:((350px / 767px)* 100vw) /2 auto;
 font-size: 30px;
 @include mq(sp){
   font-size: 24px;
+  margin-bottom:50px;
 }
 
 }
@@ -339,7 +323,7 @@ table{
       background:$green;
       z-index: -1;
       @include mq(sp){
-        // width:(300px / 767px) *100vw;
+       
   }
 }
   tr{
@@ -353,11 +337,6 @@ table{
     @include table;
     padding:30px;
     text-align: left;
-    // @include mq(sp){
-    //   width:auto;
-    //   font-size: 10px;
-      
-    // }
     @include mq(sp){
       padding:0;
       box-sizing: border-box;
@@ -371,7 +350,7 @@ td{
   text-align:left;
   padding:30px;
   white-space: nowrap;
-    // padding: 0 50px;{
+   
 
       
       &:nth-child(2){
@@ -404,95 +383,103 @@ span{
 
 
 // gallery
+
+
+
+
 #gallery{
-  width: auto;
-margin: 100px;
-// @include mq(sp){
-//   width: auto;
-// }
-
-
-h2{
-font-size: 42px;
-margin-bottom: 100px;
-text-align: left;
- @include mq(sp){
-  font-size: 24px;
-  text-align: center;
-}
-  }
-}
-
-// #gallery{
-// //   width: 100%;
-// // }
-.slick-slider{
-  width: 100%;
+  width:1020px;
+  margin:100px auto;
   @include mq(sp){
-    width: 100%;
-    margin: 0 ;
+    width:auto;
+  
   }
+  h2{
+    margin:100px auto;
+    font-size: 30px;
+
+   position: relative;
+    &:after{
+      content:"";
+      display:block;
+      width:40%;
+      height:1px;
+      background-color:#31c2b6;
+      margin-right:auto;
+     position:absolute;
+     top:   50px;
+
+    }
+    @include mq(sp){
+    font-size: 24px;
+    margin:100px 15px;
+    
+    @include table;
+    &:after{
+      display: none;
+
+    }
+  }
+  }
+}
+.slick-slider{
+  width: 70%;
+  margin: 0 auto;
+  @include mq(sp){
+    width: 80%;
+
+  }
+}
+.slick-prev:before,
+.slick-next:before
+{
+    color:#777
+
+}
+.slider img {
+  width: 100%;
+  
 }
 
 
-  // .slick-slide {
-  //   margin: 0 10px 0; /* centerPaddingで左右の見える幅を指定してもOK */
-  // }
-// }
-// }
-
-// .slick-list{
-//  width: 200%;
-// }
-// }
-// .slick-track{
-//   width: 200%;
-// }
-
-// .slider div {
-//   height: 300px;
-// }
-// .slider img {
-//   width: 100%;
-// }
-// .slick-cloned{
-//   width:10px;
-// }
-
-// .slick-slide{
-//   width:50%;
-// }
-// .slick-track {
-//   width:100%;
-//   li{
-//     width:500px;
-//   }
-//   img{
-//   width:500px;
-
-//   @include mq(sp){
-//     width:(500px / 767px) * 100vw ;
-//   }
-// }
-// }
 
 // reserve
 #reserve{
   width:auto;
-  margin:100px auto;
+  margin:200px auto;
   text-align: center;
+
+  
   @include mq(sp){
     margin:200px auto;
   }
   h2{
     font-size: 42px;
     margin:100px auto;
+    position: relative;
+
+    &:after{
+      content:"";
+      display:block;
+      width:40%;
+      height:1px;
+      background-color:#31c2b6;
+      margin:0 auto;
+      position:absolute;
+      top:50px;
+      left:0;
+      right:0;
+    }
     @include mq(sp){
       font-size: 24px;
       text-align: left;
       margin:100px 15px;
       @include table;
-      
+      &:after{
+        
+        display:none;
+      }
+  
     }
     }
     span {
@@ -510,13 +497,12 @@ text-align: left;
 
     width:200px / 1020px * 100%;
     margin: 0 auto;
-    // text-align: center;
     padding:100px;
     border:solid 1px $green;
     white-space: nowrap;
    line-height: 1.5;
  
-      // padding:100px;
+  
     
       @include mq(sp){
         padding:50px/ 767px * 100%;;
@@ -531,6 +517,8 @@ text-align: left;
     width:100%;
   }
 }
+
+
 address{
   text-align: center;
  
@@ -596,6 +584,57 @@ margin:100px auto;
   }
 }
 
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+ a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #777;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  &::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #777;
+  }
+}
+}
+
+
+
+
+
+
+
 footer{
   text-align: center;
   margin:200px 0 50px;
@@ -606,16 +645,4 @@ footer{
   }
 }
 
-@mixin positionCenter() {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
-// body {
-//   background-color: #757575;
-//   font-family: Arial;
-//   color: #79BD9A;
-// }

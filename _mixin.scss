@@ -1,6 +1,6 @@
 
 $breakpoints: (
-  "sp": "screen and (max-width: 767px)",
+  "sp": "screen and (max-width: 896px)",
   "tab": "screen and (max-width: 1179px)",
  
 );
@@ -16,16 +16,17 @@ $breakpoints: (
   color:black;
   text-decoration: none;
   &:active{
-    color:black;
+    color:#777;
   }
   
   &:visited{
-    color:black;
+    color:#777;
   }
   &:hover{
-    color:black;
+    color:#31c2b6;
     cursor: pointer;
-  
+  text-decoration: underline;
+  opacity: 0.8;
   }
 }
 // @mixin about-imgs{

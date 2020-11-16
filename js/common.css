@@ -2,12 +2,12 @@
 @charset 'UTF-8';
 /* Slider */
 
-.slick-prev:before,
+/* .slick-prev:before,
 .slick-next:before
 {
     color:rgb(255, 65, 65);
 
-}
+} */
 /* 
 .slick-track img{
   width:550px;
@@ -28,15 +28,15 @@
 /* .slick-slide{
   width:550px;
 } */
-.slick-slider{
+/* .slick-slider{
   width: 60%;
   margin: 0 auto;
 
-}
+} */
 /* .slider div {
   height: 350px;
 } */
-.slider img {
+/* .slider img {
   width: 100%;
-}
+} */
 
