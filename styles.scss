@@ -612,6 +612,9 @@ margin:100px auto;
     left: 0;
     margin: auto;
     text-align: center;
+    @include mq(sp){
+      
+    }
   }
   &::after{
     content: 'PAGE TOP';
